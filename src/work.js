@@ -53,13 +53,13 @@ perfectNumbers()
 
 function primes() {
     for (let i = 2; i <= 1000; i++) {
-        let counter1 = 0
+        let counter = 0
         for (let j = 2; j < i; j++) {
             if (i % j == 0) {
-                counter1++
+                counter++
             }
         }
-        if (counter1 == 0) {
+        if (counter == 0) {
             console.log(i)
         }
     }
